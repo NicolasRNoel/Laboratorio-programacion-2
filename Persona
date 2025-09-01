@@ -1,0 +1,24 @@
+public class Persona {
+    private String cedula;
+    private String nombre;
+    private double estatura;
+    private int edad;
+
+    public Persona(String cedula, String nombre, double estatura, int edad) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.estatura = estatura;
+        this.edad = edad;
+    }
+
+    public String getCedula() { return cedula; }
+    public String getNombre() { return nombre; }
+    public double getEstatura() { return estatura; }
+    public int getEdad() { return edad; }
+
+    @Override
+    public String toString() {
+        return "Cédula: " + cedula + ", Nombre: " + nombre +
+                ", Estatura: " + estatura + " m, Edad: " + edad;
+    }
+}
